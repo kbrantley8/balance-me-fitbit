@@ -1,6 +1,6 @@
 import document from "document";
 
-let mybutton = document.getElementById("mybutton");
-mybutton.onactivate = function(evt) {
+let addTasks = document.getElementById("add-task");
+addTasks.onactivate = function(evt) {
   console.log("Activated!");
 }
