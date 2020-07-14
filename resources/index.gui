@@ -1,3 +1,10 @@
 <svg>
-  <rect id="background" />
+  <use id="mixedtext" href="#mixed-text-center-mid" height="100%" fill="fb-yellow">
+    <set href="#header/text" attributeName="text-buffer" to="My Tasks"/>
+    <set href="#copy/text" attributeName="text-buffer"
+         to="You have no tasks!"/>
+    <use id="add-task" href="#square-button" y="3" fill="#AAAAAA">
+      <set href="#text" attributeName="text-buffer" to="Add Task" />
+    </use>
+  </use>
 </svg>
