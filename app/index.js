@@ -9,7 +9,6 @@ addTasks.onactivate = function(evt) {
     presetTasks.style.display = "inline";
     homeScreen.style.display = "none";
 }
-
 // back button
 let backButton = document.getElementById('back-button');
 backButton.onactivate = function(evt) {

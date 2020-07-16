@@ -20,6 +20,9 @@
 #quickstart-tasks {
   display: none;
 }
+/* #quickstart-tasks #tile-list-header text{
+  fill: "#E0E0E0";
+} */
 #quickstart-tasks .tile-list-item {
   height: 80;
 }
