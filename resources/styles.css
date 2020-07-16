@@ -3,9 +3,24 @@
   font-family: System-Regular;
   font-weight: regular;
 }
-
-#background {
+/* home screen */
+#home-screen {
   width: 100%;
   height: 100%;
-  fill: blue;
+}
+#home-screen #mainText {
+  fill: '#A1D991';
+}
+#home-screen #add-task text{
+  fill: '#F2CD5C';
+}
+text {
+  fill: '#F2CD5C';
+}
+
+
+/* quick select task screen */
+#quickstart-tasks {
+  display: none;
+  fill: '#F2CD5C';
 }

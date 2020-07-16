@@ -1,10 +1,19 @@
 <svg>
-  <use id="mixedtext" href="#mixed-text-center-mid" height="100%" fill="fb-yellow">
-    <set href="#header/text" attributeName="text-buffer" to="My Tasks"/>
-    <set href="#copy/text" attributeName="text-buffer"
-         to="You have no tasks!"/>
-    <use id="add-task" href="#square-button" y="3" fill="#AAAAAA">
-      <set href="#text" attributeName="text-buffer" to="Add Task" />
+
+  <svg id='home-screen'>
+    <use id="mainText" href="#mixed-text-center-mid" height="100%">
+      <set href="#header/text" attributeName="text-buffer" to="My Tasks"/>
+      <set href="#copy/text"   attributeName="text-buffer" to="You have no tasks!"/>
+      <use id="add-task" href="#square-button" y="3" fill="#F2CD5C">
+        <set href="#text" attributeName="text-buffer" to="Add Task" />  
+      </use>
     </use>
-  </use>
+  </svg>
+
+  <svg id='quickstart-tasks'>
+    <use id="mainText" href="#mixed-text-center-mid" height="100%">
+      <set href="#header/text" attributeName="text-buffer" to="Test" fill='#F2CD5C'/>
+    </use>
+  </svg>
+
 </svg>
