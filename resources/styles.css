@@ -14,13 +14,17 @@
 #home-screen #add-task text{
   fill: '#F2CD5C';
 }
-text {
-  fill: '#F2CD5C';
-}
 
 
 /* quick select task screen */
 #quickstart-tasks {
   display: none;
-  fill: '#F2CD5C';
+}
+#quickstart-tasks .tile-list-item {
+  height: 80;
+}
+#quickstart-tasks .tile-list-item text {
+  height: 32;
+  font-family: System-Regular;
+  fill: "#E0E0E0";
 }

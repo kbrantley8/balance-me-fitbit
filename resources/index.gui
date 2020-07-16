@@ -11,8 +11,27 @@
   </svg>
 
   <svg id='quickstart-tasks'>
-    <use id="mainText" href="#mixed-text-center-mid" height="100%">
-      <set href="#header/text" attributeName="text-buffer" to="Test" fill='#F2CD5C'/>
+    <use href="#tile-list">
+      <use href="#tile-list-header" class="tile-list-item">
+        <text>Quickstart Tasks</text>
+      </use>
+      <use href="#tile-list-item" class="tile-list-item">
+        <text>Text item 1</text>
+      </use>
+      <use href="#tile-list-item" class="tile-list-item">
+        <text>Text item 2</text>
+      </use>
+      <use href="#tile-list-item" class="tile-list-item">
+        <text>Text item 3</text>
+      </use>
+      <use href="#tile-list-item" class="tile-list-item">
+        <text>Text item 4</text>
+      </use>
+      <use href="#tile-list-footer" class="tile-list-item">
+        <use id="back-button" href="#square-button" y="3" fill="#F2CD5C">
+         <set href="#text" attributeName="text-buffer" to="Back" />  
+        </use>
+      </use>
     </use>
   </svg>
 
