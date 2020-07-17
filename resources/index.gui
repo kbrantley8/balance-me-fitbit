@@ -47,10 +47,58 @@
   </use>
 </svg>
 
-  <svg id='task-screen'>
-    <use id="header-text" href="#mixed-text-center-mid" height="100%">
-      <text>Test</text>
+  <svg id='task-detail-screen'>
+  <defs>
+    <symbol id="task-detail" href="#tile-list-item" focusable="false"
+            pointer-events="none" system-events="all">
+      <text id="text" />
+      <text id="time-text" />
+    </symbol>
+  </defs>
+
+    <!-- <use href="#task-detail" class="task-detail">
+      <set href="text" attributeName="text-buffer" to=" Make the Bed" />
+    </use> -->
+    <use id="start-now-button" href="#square-button" y="3" fill="#F2CD5C">
+        <set href="#text" attributeName="text-buffer" to="Back" />  
+    </use>
+    <use id="back-button" href="#square-button" y="3" fill="#F2CD5C">
+        <set href="#text" attributeName="text-buffer" to="Back" />  
     </use>
   </svg>
-
+  
+  <svg>
+    <use id="tumbler" href="#tumblerview">
+      <use id="item0" href="#tumbler-item" class="item">
+        <text id="content">01</text>
+      </use>
+      <use id="item1" href="#tumbler-item" class="item">
+        <text id="content">02</text>
+      </use>
+      <use id="item2" href="#tumbler-item" class="item">
+        <text id="content">03</text>
+      </use>
+      <use id="item3" href="#tumbler-item" class="item">
+        <text id="content">04</text>
+      </use>
+      <use id="item4" href="#tumbler-item" class="item">
+        <text id="content">05</text>
+      </use>
+      <use id="item5" href="#tumbler-item" class="item">
+        <text id="content">06</text>
+      </use>
+      <use id="item6" href="#tumbler-item" class="item">
+        <text id="content">07</text>
+      </use>
+      <use id="item7" href="#tumbler-item" class="item">
+        <text id="content">08</text>
+      </use>
+      <use id="item8" href="#tumbler-item" class="item">
+        <text id="content">09</text>
+      </use>
+      <use id="item9" href="#tumbler-item" class="item">
+        <text id="content">10</text>
+      </use>
+    </use>
+  </svg>
 </svg>
