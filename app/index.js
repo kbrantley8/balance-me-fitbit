@@ -21,6 +21,7 @@ addTasks.onactivate = function(evt) {
 }
 
 /********** QUICKSTART TASKS SCREEN ************/
+// todo: add in header, make footer button work
 let list = document.getElementById("my-list");
 let items = list.getElementsByClassName("tile-list-item");
 
@@ -28,7 +29,7 @@ items.forEach((element, index) => {
   let touch = element.getElementById("touch-me");
   touch.onclick = (evt) => {
     console.log(`touched: ${index}`);
-    showScreen('detail');
+    showScreen('time');
   }
 });
 // back button (does not work rn, only when you remove the footer use)
@@ -37,3 +38,13 @@ backButton.onclick = function(evt) {
     showScreen('home');
 }
 
+
+/********** TIME PICKER SCREEN ************/
+// does not work yet
+let selectedIndex = timePicker.value;
+let selectedItem = timePicker.getElementById("item" + selectedIndex);
+let selectedValue = selectedItem.getElementById("content").text;
+
+console.log(`index: ${selectedIndex} :: value: ${selectedValue}`);
+
+selectedItem.getElementById("content").text = "New Value";
