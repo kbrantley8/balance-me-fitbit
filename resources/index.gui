@@ -21,9 +21,6 @@
     </defs>
     <use id="my-list" href="#tile-list">
       <var id="separator-height-bottom" value="2" />
-      <!-- <use href="#tile-list-header" id="header" class="tile-list-item">
-        <text>QuickStart Tasks</text>
-      </use> -->
       <use href="#my-tile-item" class="tile-list-item">
         <set href="text" attributeName="text-buffer" to=" Make the Bed" />
       </use>
@@ -71,8 +68,7 @@
   </svg>
   
 
-
-  <svg id='tumbler'>
+ <svg id='tumbler'>
     <use id="tumbler1" href="#tumblerview" x="0" y="49">
     <rect width="174" height="250" x="0" y="0" />
     <use id="item0" href="#tumbler-item">
@@ -139,5 +135,33 @@
     <text id="my-value" class="my-item">10</text>
     </use>
     </use>
+  </svg> 
+
+
+    <svg id="main" viewport-fill="black">
+    <defs>
+      <symbol id="drag-box-sym">
+        <rect id="rect" x="0" y="0" width="100%" height="100%" fill="#8bc34a">
+          <animate attributeName="opacity" begin="enable" from="0" to="1" dur="0.3" easing="ease-out" final="keep" />
+          <animate attributeName="opacity" begin="disable" from="1" to="0" dur="0.5" easing="ease-out" final="keep" />
+        </rect>
+      </symbol>
+    </defs>
+
+    <use id="drag-box" href="#drag-box-sym" x="5" y="0" width="0" height="100%" />
+
+    <text id="count-time">m</text>
+    
+    <text id="start-time" class="small-time" fill="#4caf50">-:--</text>
+    <text id="now-time" class="small-time" fill="white">9:42</text>
+    <text id="end-time" class="small-time" fill="#e91e63">-:--</text>
+
+    <rect id="touch" x="0" y="0" width="100%" height="100%" pointer-events="visible" opacity="0"></rect>
+
+    <use id="cancel-btn" href="#combo-button-upper-left" fill="#333333" display="none">
+      <set href="combo-button-icon" attributeName="href" to="cancel.png" />
+    </use>
+
   </svg>
+
 </svg>
