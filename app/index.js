@@ -1,5 +1,8 @@
 import document from "document";
 
+// what the current task is
+var task = '';
+
 // screens
 let homeScreen = document.getElementById("home-screen");
 let presetTasks =  document.getElementById("quickstart-tasks");
@@ -20,6 +23,9 @@ addTasks.onactivate = function(evt) {
     showScreen('preset');
 }
 
+
+
+
 /********** QUICKSTART TASKS SCREEN ************/
 // todo: add in header, make footer button work
 let list = document.getElementById("my-list");
@@ -28,8 +34,9 @@ let items = list.getElementsByClassName("tile-list-item");
 items.forEach((element, index) => {
   let touch = element.getElementById("touch-me");
   touch.onclick = (evt) => {
-    console.log(`touched: ${index}`);
-    showScreen('time');
+    console.log(element.getElementById('text').text);
+    task = element.getElementById('text').text;
+    showScreen('detail');
   }
 });
 // back button (does not work rn, only when you remove the footer use)
@@ -37,6 +44,31 @@ let backButton = document.getElementById('back-button');
 backButton.onclick = function(evt) {
     showScreen('home');
 }
+
+
+
+
+/********** TASK DETAIL SCREEN ************/
+let btnLeft = myPopup.getElementById("btnLeft");
+let btnRight = myPopup.getElementById("btnRight");
+let header = document.getElementById('task-detail-text');
+
+let headerLabel = mixedText.getElementById('header');
+headerLabel.text = task;
+
+btnLeft.onclick = function(evt) {
+    console.log('left');
+    console.log(headerLabel);
+    // go to later screen
+}
+btnRight.onclick = function(evt) {
+    console.log('right');
+    // go to now screen
+}
+
+
+
+
 
 
 /********** TIME PICKER SCREEN ************/

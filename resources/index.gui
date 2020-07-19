@@ -8,97 +8,136 @@
       </use>
     </use>
   </svg>
-
+  
   <svg id='quickstart-tasks'>
-  <defs>
-    <symbol id="my-tile-item" href="#tile-list-item" focusable="false"
-            pointer-events="none" system-events="all">
-      <text id="text" />
-      <rect id="tile-divider-bottom" class="tile-divider-bottom" />
-      <rect id="touch-me" pointer-events="all" x="0" y="0" width="100%"
-            height="100%-2" opacity="0" />
-    </symbol>
-  </defs>
-  <use id="my-list" href="#tile-list">
-    <var id="separator-height-bottom" value="2" />
-    <!-- <use href="#tile-list-header" id="header" class="tile-list-item">
-      <text>QuickStart Tasks</text>
-    </use> -->
-    <use href="#my-tile-item" class="tile-list-item">
-      <set href="text" attributeName="text-buffer" to=" Make the Bed" />
-    </use>
-    <use href="#my-tile-item" class="tile-list-item">
-      <set href="text" attributeName="text-buffer" to=" Brush Teeth" />
-    </use>
-    <use href="#my-tile-item" class="tile-list-item">
-      <set href="text" attributeName="text-buffer" to=" Do Laundry" />
-    </use>
-    <use href="#my-tile-item" class="tile-list-item">
-      <set href="text" attributeName="text-buffer" to=" Pick up Room" />
-    </use>
-    <use href="#my-tile-item" class="tile-list-item">
-      <set href="text" attributeName="text-buffer" to=" Take Medication" />
-    </use>
-    <use href="#tile-list-footer" class="tile-list-item">
-      <use id="back-button" href="#square-button" y="3" fill="#F2CD5C">
-        <set href="#text" attributeName="text-buffer" to="Back" />  
+    <defs>
+      <symbol id="my-tile-item" href="#tile-list-item" focusable="false"
+              pointer-events="none" system-events="all">
+        <text id="text" />
+        <rect id="tile-divider-bottom" class="tile-divider-bottom" />
+        <rect id="touch-me" pointer-events="all" x="0" y="0" width="100%"
+              height="100%-2" opacity="0" />
+      </symbol>
+    </defs>
+    <use id="my-list" href="#tile-list">
+      <var id="separator-height-bottom" value="2" />
+      <!-- <use href="#tile-list-header" id="header" class="tile-list-item">
+        <text>QuickStart Tasks</text>
+      </use> -->
+      <use href="#my-tile-item" class="tile-list-item">
+        <set href="text" attributeName="text-buffer" to=" Make the Bed" />
+      </use>
+      <use href="#my-tile-item" class="tile-list-item">
+        <set href="text" attributeName="text-buffer" to=" Brush Teeth" />
+      </use>
+      <use href="#my-tile-item" class="tile-list-item">
+        <set href="text" attributeName="text-buffer" to=" Do Laundry" />
+      </use>
+      <use href="#my-tile-item" class="tile-list-item">
+        <set href="text" attributeName="text-buffer" to=" Pick up Room" />
+      </use>
+      <use href="#my-tile-item" class="tile-list-item">
+        <set href="text" attributeName="text-buffer" to=" Take Medication" />
+      </use>
+      <use href="#tile-list-footer" class="tile-list-item">
+        <use id="back-button" href="#square-button" y="3" fill="#F2CD5C">
+          <set href="#text" attributeName="text-buffer" to="Back" />  
+        </use>
       </use>
     </use>
-  </use>
-</svg>
+  </svg>
+
+
 
   <svg id='task-detail-screen'>
-  <defs>
-    <symbol id="task-detail" href="#tile-list-item" focusable="false"
-            pointer-events="none" system-events="all">
-      <text id="text" />
-      <text id="time-text" />
-    </symbol>
-  </defs>
-
-    <!-- <use href="#task-detail" class="task-detail">
-      <set href="text" attributeName="text-buffer" to=" Make the Bed" />
-    </use> -->
-    <use id="start-now-button" href="#square-button" y="3" fill="#F2CD5C">
-        <set href="#text" attributeName="text-buffer" to="Back" />  
+  <!-- Title and text -->
+    <use href="#mixed-text-center-mid" class="dialog-mixed-text" fill="fb-white" id='task-detail-text'>
+      <set href="#top-padding" attributeName="display" to="none" />
+      <set href="#header/text" attributeName="text-buffer" to="Ready, Set, Go" />
+      <set href="#header/text" attributeName="fill" to="fb-magenta"/>
+      <set href="#copy/text" attributeName="text-buffer" to="Are you ready to begin working?" />
+      <set href="#bottom-padding" attributeName="display" to="none" />
     </use>
-    <use id="back-button" href="#square-button" y="3" fill="#F2CD5C">
-        <set href="#text" attributeName="text-buffer" to="Back" />  
+    <!-- Left button -->
+    <use id="btnLeft" class="dialog-half-button-left" href="#square-button-neutral">
+      <set href="#text" attributeName="text-buffer" to="Later" />
+      <set href="#text" attributeName="text-anchor" to="middle" />
+    </use>
+    <!-- Right button -->
+    <use id="btnRight" class="dialog-half-button-right" href="#square-button-negative">
+      <set href="#text" attributeName="text-buffer" to="Start" />
+      <set href="#text" attributeName="text-anchor" to="middle" />
     </use>
   </svg>
   
-  <svg>
-    <use id="tumbler" href="#tumblerview">
-      <use id="item0" href="#tumbler-item" class="item">
-        <text id="content">01</text>
-      </use>
-      <use id="item1" href="#tumbler-item" class="item">
-        <text id="content">02</text>
-      </use>
-      <use id="item2" href="#tumbler-item" class="item">
-        <text id="content">03</text>
-      </use>
-      <use id="item3" href="#tumbler-item" class="item">
-        <text id="content">04</text>
-      </use>
-      <use id="item4" href="#tumbler-item" class="item">
-        <text id="content">05</text>
-      </use>
-      <use id="item5" href="#tumbler-item" class="item">
-        <text id="content">06</text>
-      </use>
-      <use id="item6" href="#tumbler-item" class="item">
-        <text id="content">07</text>
-      </use>
-      <use id="item7" href="#tumbler-item" class="item">
-        <text id="content">08</text>
-      </use>
-      <use id="item8" href="#tumbler-item" class="item">
-        <text id="content">09</text>
-      </use>
-      <use id="item9" href="#tumbler-item" class="item">
-        <text id="content">10</text>
-      </use>
+
+
+  <svg id='tumbler'>
+    <use id="tumbler1" href="#tumblerview" x="0" y="49">
+    <rect width="174" height="250" x="0" y="0" />
+    <use id="item0" href="#tumbler-item">
+    <text id="my-value" class="my-item">01</text>
+    </use>
+    <use id="item1" href="#tumbler-item">
+    <text id="my-value" class="my-item">02</text>
+    </use>
+    <use id="item2" href="#tumbler-item">
+    <text id="my-value" class="my-item">03</text>
+    </use>
+    <use id="item3" href="#tumbler-item">
+    <text id="my-value" class="my-item">04</text>
+    </use>
+    <use id="item4" href="#tumbler-item">
+    <text id="my-value" class="my-item">05</text>
+    </use>
+    <use id="item5" href="#tumbler-item">
+    <text id="my-value" class="my-item">06</text>
+    </use>
+    <use id="item6" href="#tumbler-item">
+    <text id="my-value" class="my-item">07</text>
+    </use>
+    <use id="item7" href="#tumbler-item">
+    <text id="my-value" class="my-item">08</text>
+    </use>
+    <use id="item8" href="#tumbler-item">
+    <text id="my-value" class="my-item">09</text>
+    </use>
+    <use id="item9" href="#tumbler-item">
+    <text id="my-value" class="my-item">10</text>
+    </use>
+    </use>
+    <use id="my-tumbler2" href="#tumblerview" x="174" y="49">
+    <rect width="174" height="250" x="0" y="0" />
+    <use id="item0" href="#tumbler-item">
+    <text id="my-value" class="my-item">01</text>
+    </use>
+    <use id="item1" href="#tumbler-item">
+    <text id="my-value" class="my-item">02</text>
+    </use>
+    <use id="item2" href="#tumbler-item">
+    <text id="my-value" class="my-item">03</text>
+    </use>
+    <use id="item3" href="#tumbler-item">
+    <text id="my-value" class="my-item">04</text>
+    </use>
+    <use id="item4" href="#tumbler-item">
+    <text id="my-value" class="my-item">05</text>
+    </use>
+    <use id="item5" href="#tumbler-item">
+    <text id="my-value" class="my-item">06</text>
+    </use>
+    <use id="item6" href="#tumbler-item">
+    <text id="my-value" class="my-item">07</text>
+    </use>
+    <use id="item7" href="#tumbler-item">
+    <text id="my-value" class="my-item">08</text>
+    </use>
+    <use id="item8" href="#tumbler-item">
+    <text id="my-value" class="my-item">09</text>
+    </use>
+    <use id="item9" href="#tumbler-item">
+    <text id="my-value" class="my-item">10</text>
+    </use>
     </use>
   </svg>
 </svg>

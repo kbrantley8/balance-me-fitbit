@@ -3,7 +3,7 @@
   width: 100%;
   height: 100%;
 }
-#home-screen #mainText {
+#mainText {
   fill: '#A1D991';
 }
 #home-screen #add-task text{
@@ -46,3 +46,9 @@
  }
 .item { height: 90; }
 .item text { font-size: 80; fill: white; x: 5;  }
+
+
+/* end screen */
+#end-task-screen {
+  display: none;
+}
