@@ -34,8 +34,10 @@ let items = list.getElementsByClassName("tile-list-item");
 items.forEach((element, index) => {
   let touch = element.getElementById("touch-me");
   touch.onclick = (evt) => {
-    console.log(element.getElementById('text').text);
+    //grab the name of the task, save it, and then set the next screen name to the task
     task = element.getElementById('text').text;
+    taskDetail.getElementById('task-detail-text').text = task;
+    console.log(task);
     showScreen('detail');
   }
 });
@@ -46,22 +48,16 @@ backButton.onclick = function(evt) {
 }
 
 
-
-
 /********** TASK DETAIL SCREEN ************/
-let btnLeft = myPopup.getElementById("btnLeft");
-let btnRight = myPopup.getElementById("btnRight");
-let header = document.getElementById('task-detail-text');
+let btnLeft = taskDetail.getElementById("btnLeft");
+let btnRight = taskDetail.getElementById("btnRight");
 
-let headerLabel = mixedText.getElementById('header');
-headerLabel.text = task;
-
-btnLeft.onclick = function(evt) {
+btnLeft.onactivate = function(evt) {
     console.log('left');
-    console.log(headerLabel);
+    showScreen('time');
     // go to later screen
 }
-btnRight.onclick = function(evt) {
+btnRight.onactivate = function(evt) {
     console.log('right');
     // go to now screen
 }
