@@ -14,7 +14,7 @@ let homeScreen = document.getElementById("home-screen");
 let presetTasks =  document.getElementById("quickstart-tasks");
 let taskDetail = document.getElementById("task-detail-screen");
 let timePicker = document.getElementById("tumbler");
-let timer = document.getElementById('main');
+let timer = document.getElementById('timer');
 
 function showScreen(string) {
    (string === 'home') ? homeScreen.style.display = "inline" : homeScreen.style.display = "none";
@@ -57,7 +57,6 @@ let btnRight = taskDetail.getElementById("btnRight");
 btnLeft.onactivate = function(evt) {
     console.log('left');
     showScreen('time');
-    // go to later screen
 }
 btnRight.onactivate = function(evt) {
     console.log('right');
@@ -89,12 +88,12 @@ selectedItem.getElementById("content").text = "New Value";
 
 
 ///********** TIMER SCREEN ************/
-const $ = id => document.getElementById(id);
+const $ = document.getElementById('timer');
 const pad = n => n < 10 ? "0" + n : n;
 
 const HOUR12 = (preferences.clockDisplay === "12h");
 
-const mainNode = $("main");
+const mainNode = $("timer");
 const touchNode = $("touch");
 
 const dragBoxNode = $("drag-box");

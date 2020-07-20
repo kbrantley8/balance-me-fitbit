@@ -20,6 +20,9 @@
       </symbol>
     </defs>
     <use id="my-list" href="#tile-list">
+      <!-- <use href="#tile-list-header" class="tile-list-item">
+        <text>Header</text>
+      </use> -->
       <var id="separator-height-bottom" value="2" />
       <use href="#my-tile-item" class="tile-list-item">
         <set href="text" attributeName="text-buffer" to=" Make the Bed" />
@@ -36,11 +39,11 @@
       <use href="#my-tile-item" class="tile-list-item">
         <set href="text" attributeName="text-buffer" to=" Take Medication" />
       </use>
-      <use href="#tile-list-footer" class="tile-list-item">
+      <!-- <use href="#tile-list-footer" class="tile-list-item">
         <use id="back-button" href="#square-button" y="3" fill="#F2CD5C">
           <set href="#text" attributeName="text-buffer" to="Back" />  
         </use>
-      </use>
+      </use> -->
     </use>
   </svg>
 
@@ -138,7 +141,7 @@
   </svg> 
 
 
-    <svg id="main" viewport-fill="black">
+  <svg id="timer" viewport-fill="black">
     <defs>
       <symbol id="drag-box-sym">
         <rect id="rect" x="0" y="0" width="100%" height="100%" fill="#8bc34a">
@@ -161,7 +164,6 @@
     <use id="cancel-btn" href="#combo-button-upper-left" fill="#333333" display="none">
       <set href="combo-button-icon" attributeName="href" to="cancel.png" />
     </use>
-
-  </svg>
+  </svg> 
 
 </svg>
