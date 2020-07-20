@@ -20,9 +20,6 @@
       </symbol>
     </defs>
     <use id="my-list" href="#tile-list">
-      <!-- <use href="#tile-list-header" class="tile-list-item">
-        <text>Header</text>
-      </use> -->
       <var id="separator-height-bottom" value="2" />
       <use href="#my-tile-item" class="tile-list-item">
         <set href="text" attributeName="text-buffer" to=" Make the Bed" />
@@ -39,11 +36,6 @@
       <use href="#my-tile-item" class="tile-list-item">
         <set href="text" attributeName="text-buffer" to=" Take Medication" />
       </use>
-      <!-- <use href="#tile-list-footer" class="tile-list-item">
-        <use id="back-button" href="#square-button" y="3" fill="#F2CD5C">
-          <set href="#text" attributeName="text-buffer" to="Back" />  
-        </use>
-      </use> -->
     </use>
   </svg>
 
@@ -72,71 +64,71 @@
   
 
  <svg id='tumbler'>
-    <use id="tumbler1" href="#tumblerview" x="0" y="49">
-    <rect width="174" height="250" x="0" y="0" />
-    <use id="item0" href="#tumbler-item">
-    <text id="my-value" class="my-item">01</text>
+    <use id="hours" href="#tumblerview" x="0" y="49">
+      <rect width="174" height="250" x="0" y="0" />
+      <use id="item0" href="#tumbler-item">
+      <text id="my-value" class="my-item">01</text>
+      </use>
+      <use id="item1" href="#tumbler-item">
+      <text id="my-value" class="my-item">02</text>
+      </use>
+      <use id="item2" href="#tumbler-item">
+      <text id="my-value" class="my-item">03</text>
+      </use>
+      <use id="item3" href="#tumbler-item">
+      <text id="my-value" class="my-item">04</text>
+      </use>
+      <use id="item4" href="#tumbler-item">
+      <text id="my-value" class="my-item">05</text>
+      </use>
+      <use id="item5" href="#tumbler-item">
+      <text id="my-value" class="my-item">06</text>
+      </use>
+      <use id="item6" href="#tumbler-item">
+      <text id="my-value" class="my-item">07</text>
+      </use>
+      <use id="item7" href="#tumbler-item">
+      <text id="my-value" class="my-item">08</text>
+      </use>
+      <use id="item8" href="#tumbler-item">
+      <text id="my-value" class="my-item">09</text>
+      </use>
+      <use id="item9" href="#tumbler-item">
+      <text id="my-value" class="my-item">10</text>
+      </use>
     </use>
-    <use id="item1" href="#tumbler-item">
-    <text id="my-value" class="my-item">02</text>
-    </use>
-    <use id="item2" href="#tumbler-item">
-    <text id="my-value" class="my-item">03</text>
-    </use>
-    <use id="item3" href="#tumbler-item">
-    <text id="my-value" class="my-item">04</text>
-    </use>
-    <use id="item4" href="#tumbler-item">
-    <text id="my-value" class="my-item">05</text>
-    </use>
-    <use id="item5" href="#tumbler-item">
-    <text id="my-value" class="my-item">06</text>
-    </use>
-    <use id="item6" href="#tumbler-item">
-    <text id="my-value" class="my-item">07</text>
-    </use>
-    <use id="item7" href="#tumbler-item">
-    <text id="my-value" class="my-item">08</text>
-    </use>
-    <use id="item8" href="#tumbler-item">
-    <text id="my-value" class="my-item">09</text>
-    </use>
-    <use id="item9" href="#tumbler-item">
-    <text id="my-value" class="my-item">10</text>
-    </use>
-    </use>
-    <use id="my-tumbler2" href="#tumblerview" x="174" y="49">
-    <rect width="174" height="250" x="0" y="0" />
-    <use id="item0" href="#tumbler-item">
-    <text id="my-value" class="my-item">01</text>
-    </use>
-    <use id="item1" href="#tumbler-item">
-    <text id="my-value" class="my-item">02</text>
-    </use>
-    <use id="item2" href="#tumbler-item">
-    <text id="my-value" class="my-item">03</text>
-    </use>
-    <use id="item3" href="#tumbler-item">
-    <text id="my-value" class="my-item">04</text>
-    </use>
-    <use id="item4" href="#tumbler-item">
-    <text id="my-value" class="my-item">05</text>
-    </use>
-    <use id="item5" href="#tumbler-item">
-    <text id="my-value" class="my-item">06</text>
-    </use>
-    <use id="item6" href="#tumbler-item">
-    <text id="my-value" class="my-item">07</text>
-    </use>
-    <use id="item7" href="#tumbler-item">
-    <text id="my-value" class="my-item">08</text>
-    </use>
-    <use id="item8" href="#tumbler-item">
-    <text id="my-value" class="my-item">09</text>
-    </use>
-    <use id="item9" href="#tumbler-item">
-    <text id="my-value" class="my-item">10</text>
-    </use>
+    <use id="minutes" href="#tumblerview" x="170" y="49">
+      <rect width="170" height="250" x="0" y="0" />
+      <use id="item0" href="#tumbler-item">
+      <text id="my-value" class="my-item">01</text>
+      </use>
+      <use id="item1" href="#tumbler-item">
+      <text id="my-value" class="my-item">02</text>
+      </use>
+      <use id="item2" href="#tumbler-item">
+      <text id="my-value" class="my-item">03</text>
+      </use>
+      <use id="item3" href="#tumbler-item">
+      <text id="my-value" class="my-item">04</text>
+      </use>
+      <use id="item4" href="#tumbler-item">
+      <text id="my-value" class="my-item">05</text>
+      </use>
+      <use id="item5" href="#tumbler-item">
+      <text id="my-value" class="my-item">06</text>
+      </use>
+      <use id="item6" href="#tumbler-item">
+      <text id="my-value" class="my-item">07</text>
+      </use>
+      <use id="item7" href="#tumbler-item">
+      <text id="my-value" class="my-item">08</text>
+      </use>
+      <use id="item8" href="#tumbler-item">
+      <text id="my-value" class="my-item">09</text>
+      </use>
+      <use id="item9" href="#tumbler-item">
+      <text id="my-value" class="my-item">10</text>
+      </use>
     </use>
   </svg> 
 

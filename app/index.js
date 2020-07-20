@@ -20,7 +20,7 @@ function showScreen(string) {
    (string === 'home') ? homeScreen.style.display = "inline" : homeScreen.style.display = "none";
    (string === 'preset') ? presetTasks.style.display = "inline" : presetTasks.style.display = "none";
    (string === 'detail') ? taskDetail.style.display = "inline" : taskDetail.style.display = "none";
-   (string === 'time') ? timePicker.style.display = "inline" : timePicker.style.display = "none";
+   (string === 'timepicker') ? timePicker.style.display = "inline" : timePicker.style.display = "none";
    (string === 'timer') ? timer.style.display = "inline" : timer.style.display = "none";
 }
 
@@ -51,15 +51,13 @@ items.forEach((element, index) => {
 });
 
 /********** TASK DETAIL SCREEN ************/
-let btnLeft = taskDetail.getElementById("btnLeft");
-let btnRight = taskDetail.getElementById("btnRight");
+let laterButton = taskDetail.getElementById("btnLeft");
+let nowButton = taskDetail.getElementById("btnRight");
 
-btnLeft.onactivate = function(evt) {
-    console.log('left');
-    showScreen('time');
+laterButton.onactivate = function(evt) {
+    showScreen('timepicker');
 }
-btnRight.onactivate = function(evt) {
-    console.log('right');
+nowButton.onactivate = function(evt) {
     showScreen('timer');
 }
 
@@ -71,14 +69,14 @@ btnRight.onactivate = function(evt) {
 
 
 /********** TIME PICKER SCREEN ************/
-// does not work yet
-let selectedIndex = timePicker.value;
-let selectedItem = timePicker.getElementById("item" + selectedIndex);
-let selectedValue = selectedItem.getElementById("content").text;
+// // does not work yet
+// let selectedIndex = timePicker.value;
+// let selectedItem = timePicker.getElementById("item" + selectedIndex);
+// let selectedValue = selectedItem.getElementById("content").text;
 
-console.log(`index: ${selectedIndex} :: value: ${selectedValue}`);
+// console.log(`index: ${selectedIndex} :: value: ${selectedValue}`);
 
-selectedItem.getElementById("content").text = "New Value";
+// selectedItem.getElementById("content").text = "New Value";
 
 
 
@@ -88,22 +86,22 @@ selectedItem.getElementById("content").text = "New Value";
 
 
 ///********** TIMER SCREEN ************/
-const $ = document.getElementById('timer');
+const timer = document.getElementById('timer');
 const pad = n => n < 10 ? "0" + n : n;
 
 const HOUR12 = (preferences.clockDisplay === "12h");
 
-const mainNode = $("timer");
-const touchNode = $("touch");
+const mainNode = document.getElementById("timer");
+const touchNode = timer.getElementById("touch");
 
-const dragBoxNode = $("drag-box");
-const countTimeNode = $("count-time");
+const dragBoxNode = timer.getElementById("drag-box");
+const countTimeNode = timer.getElementById("count-time");
 
-const startTimeNode = $("start-time");
-const nowTimeNode = $("now-time");
-const endTimeNode = $("end-time");
+const startTimeNode = timer.getElementById("start-time");
+const nowTimeNode = timer.getElementById("now-time");
+const endTimeNode = timer.getElementById("end-time");
 
-const btnNode = $("cancel-btn");
+const btnNode = timer.getElementById("cancel-btn");
 
 clock.granularity = "seconds";
 
@@ -135,6 +133,7 @@ function init() {
     btnNode.style.display = "inline";
   } else {
     //show a bit of the drag bar as an affordance of user interaction
+    console.log('here');
     dragBoxNode.width = 2;
   }
 }
@@ -151,6 +150,7 @@ function setNodeToTime(node, t) {
 let mouseDownStart = 0;  //used to distinguish between down+up and down+drag
 
 touchNode.onmousedown = e => {
+  console.log('pressed');
   let now = Date.now();
   if(startTime === 0 || now < startTime + 6000 || now > endTime) {
     isTouchDown = true;

@@ -34,17 +34,26 @@
 }
 
 /* task detail screen */
-#task-detail-screen {
+#task-detail-screen{
   display: none;
 }
 
 /* tumbler */
 #tumbler { 
-  y: 50%-55;
+  /* y: 50%-55; */
   display: none;
  }
-.item { height: 60; }
-.item text { font-size: 120; fill: white; x: 5;  }
+
+#hours .my-item {
+  fill: white; 
+  font-size: 100;
+  x: 5;
+}
+#minutes .my-item {
+  fill: white; 
+  font-size: 100;
+}
+
 
 
 /* end screen */
