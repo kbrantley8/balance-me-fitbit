@@ -50,20 +50,7 @@ items.forEach((element, index) => {
   }
 });
 
-/********** TASK DETAIL SCREEN ************/
-let laterButton = taskDetail.getElementById("btnLeft");
-let nowButton = taskDetail.getElementById("btnRight");
-
-laterButton.onactivate = function(evt) {
-    showScreen('timepicker');
-}
-nowButton.onactivate = function(evt) {
-    showScreen('timer');
-}
-
 /********** DO LATER SCREEN ************/
-
-
 
 
 
@@ -91,7 +78,7 @@ const pad = n => n < 10 ? "0" + n : n;
 
 const HOUR12 = (preferences.clockDisplay === "12h");
 
-const mainNode = document.getElementById("timer");
+const mainNode = document.getElementById("root");
 const touchNode = timer.getElementById("touch");
 
 const dragBoxNode = timer.getElementById("drag-box");
@@ -182,12 +169,15 @@ let curNum = 0;
 let lingerNum = 0;
 let lingerTimer = 0;
 
-touchNode.onmousemove = e => {
+touchNode.onmousemove = e => { 
   if(isTouchDown && Date.now() - mouseDownStart > 200) {
+    console.log('in mouse move')
     let x = Math.min(WIDTH - 10, Math.max(0, e.screenX - 5));
+    console.log('x', x)
     dragBoxNode.width = x;
 
     curNum = Math.round(60*Math.tan(x*PI_WIDTH));
+    console.log(curNum);
 
     if(curNum !== lingerNum) {
       clearTimeout(lingerTimer);
@@ -198,7 +188,7 @@ touchNode.onmousemove = e => {
       }, 80);
     }
   }
-};
+}
 
 touchNode.onmouseup = e => {
   if(isTouchDown) {
@@ -289,3 +279,16 @@ btnNode.onclick = () => {
   btnNode.style.display = "none";
   checkAndAdjust();  //clears any timeouts
 };
+
+
+/********** TASK DETAIL SCREEN ************/
+let laterButton = taskDetail.getElementById("btnLeft");
+let nowButton = taskDetail.getElementById("btnRight");
+
+laterButton.onactivate = function(evt) {
+    showScreen('timepicker');
+}
+nowButton.onactivate = function(evt) {
+    showScreen('timer');
+    init();
+}

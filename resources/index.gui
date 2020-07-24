@@ -1,4 +1,4 @@
-<svg>
+<svg id='root'>
   <svg id='home-screen'>
     <use id="mainText" href="#mixed-text-center-mid" height="100%">
       <set href="#header/text" attributeName="text-buffer" to="My Tasks"/>
