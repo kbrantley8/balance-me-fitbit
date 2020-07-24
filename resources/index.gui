@@ -61,78 +61,9 @@
       <set href="#text" attributeName="text-anchor" to="middle" />
     </use>
   </svg>
-  
-
- <svg id='tumbler'>
-    <use id="hours" href="#tumblerview" x="0" y="49">
-      <rect width="174" height="250" x="0" y="0" />
-      <use id="item0" href="#tumbler-item">
-      <text id="my-value" class="my-item">01</text>
-      </use>
-      <use id="item1" href="#tumbler-item">
-      <text id="my-value" class="my-item">02</text>
-      </use>
-      <use id="item2" href="#tumbler-item">
-      <text id="my-value" class="my-item">03</text>
-      </use>
-      <use id="item3" href="#tumbler-item">
-      <text id="my-value" class="my-item">04</text>
-      </use>
-      <use id="item4" href="#tumbler-item">
-      <text id="my-value" class="my-item">05</text>
-      </use>
-      <use id="item5" href="#tumbler-item">
-      <text id="my-value" class="my-item">06</text>
-      </use>
-      <use id="item6" href="#tumbler-item">
-      <text id="my-value" class="my-item">07</text>
-      </use>
-      <use id="item7" href="#tumbler-item">
-      <text id="my-value" class="my-item">08</text>
-      </use>
-      <use id="item8" href="#tumbler-item">
-      <text id="my-value" class="my-item">09</text>
-      </use>
-      <use id="item9" href="#tumbler-item">
-      <text id="my-value" class="my-item">10</text>
-      </use>
-    </use>
-    <use id="minutes" href="#tumblerview" x="170" y="49">
-      <rect width="170" height="250" x="0" y="0" />
-      <use id="item0" href="#tumbler-item">
-      <text id="my-value" class="my-item">01</text>
-      </use>
-      <use id="item1" href="#tumbler-item">
-      <text id="my-value" class="my-item">02</text>
-      </use>
-      <use id="item2" href="#tumbler-item">
-      <text id="my-value" class="my-item">03</text>
-      </use>
-      <use id="item3" href="#tumbler-item">
-      <text id="my-value" class="my-item">04</text>
-      </use>
-      <use id="item4" href="#tumbler-item">
-      <text id="my-value" class="my-item">05</text>
-      </use>
-      <use id="item5" href="#tumbler-item">
-      <text id="my-value" class="my-item">06</text>
-      </use>
-      <use id="item6" href="#tumbler-item">
-      <text id="my-value" class="my-item">07</text>
-      </use>
-      <use id="item7" href="#tumbler-item">
-      <text id="my-value" class="my-item">08</text>
-      </use>
-      <use id="item8" href="#tumbler-item">
-      <text id="my-value" class="my-item">09</text>
-      </use>
-      <use id="item9" href="#tumbler-item">
-      <text id="my-value" class="my-item">10</text>
-      </use>
-    </use>
-  </svg> 
 
 
+ <!-- timer svg -->
   <svg id="timer" viewport-fill="black">
     <defs>
       <symbol id="drag-box-sym">
@@ -155,6 +86,82 @@
 
     <use id="cancel-btn" href="#combo-button-upper-left" fill="#333333" display="none">
       <set href="combo-button-icon" attributeName="href" to="cancel.png" />
+    </use>
+  </svg> 
+
+
+ <svg id='tumbler'>
+    <use id="hours" href="#tumblerview" x="0" y="49">
+      <rect width="174" height="250" x="0" y="0" />
+      <use id="item0" href="#tumbler-item">
+        <text id="my-value" class="my-item">01</text>
+      </use>
+      <use id="item1" href="#tumbler-item">
+       <text id="my-value" class="my-item">02</text>
+      </use>
+      <use id="item2" href="#tumbler-item">
+        <text id="my-value" class="my-item">03</text>
+      </use>
+      <use id="item3" href="#tumbler-item">
+       <text id="my-value" class="my-item">04</text>
+      </use>
+      <use id="item4" href="#tumbler-item">
+       <text id="my-value" class="my-item">05</text>
+      </use>
+      <use id="item5" href="#tumbler-item">
+        <text id="my-value" class="my-item">06</text>
+      </use>
+      <use id="item6" href="#tumbler-item">
+        <text id="my-value" class="my-item">07</text>
+      </use>
+      <use id="item7" href="#tumbler-item">
+       <text id="my-value" class="my-item">08</text>
+      </use>
+      <use id="item8" href="#tumbler-item">
+        <text id="my-value" class="my-item">09</text>
+      </use>
+      <use id="item9" href="#tumbler-item">
+        <text id="my-value" class="my-item">10</text>
+      </use>
+      <use id="item10" href="#tumbler-item">
+        <text id="my-value" class="my-item">11</text>
+      </use>
+      <use id="item11" href="#tumbler-item">
+        <text id="my-value" class="my-item">12</text>
+      </use>
+    </use>
+    <use id="minutes" href="#tumblerview" x="170" y="49">
+      <rect width="170" height="250" x="0" y="0" />
+      <use id="item0" href="#tumbler-item">
+       <text id="my-value" class="my-item">01</text>
+      </use>
+      <use id="item1" href="#tumbler-item">
+        <text id="my-value" class="my-item">02</text>
+      </use>
+      <use id="item2" href="#tumbler-item">
+       <text id="my-value" class="my-item">03</text>
+      </use>
+      <use id="item3" href="#tumbler-item">
+        <text id="my-value" class="my-item">04</text>
+      </use>
+      <use id="item4" href="#tumbler-item">
+        <text id="my-value" class="my-item">05</text>
+      </use>
+      <use id="item5" href="#tumbler-item">
+        <text id="my-value" class="my-item">06</text>
+      </use>
+      <use id="item6" href="#tumbler-item">
+        <text id="my-value" class="my-item">07</text>
+      </use>
+      <use id="item7" href="#tumbler-item">
+        <text id="my-value" class="my-item">08</text>
+      </use>
+      <use id="item8" href="#tumbler-item">
+        <text id="my-value" class="my-item">09</text>
+      </use>
+      <use id="item9" href="#tumbler-item">
+        <text id="my-value" class="my-item">10</text>
+      </use>
     </use>
   </svg> 
 
